@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/DseInfEnviosTotales.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/DseInfEnviosTotales.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DseInfEnviosTotales.xsd" id="DseInfEnviosTotales" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DseInfEnviosTotales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FEXNOT_INFODECLARACTOTALES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="JUNIO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="JULIO1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="JULIO2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AGOSTO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SEPTIEMBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="OCTUBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="NOVIEMBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DICIEMBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ENERO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="FEBRERO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MARZO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ABRIL" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MAYO" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FEXNOT_INFOAVALUOSTOTALES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="JUNIO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="JULIO1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="JULIO2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="AGOSTO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="SEPTIEMBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="OCTUBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="NOVIEMBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DICIEMBRE" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ENERO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="FEBRERO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MARZO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ABRIL" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MAYO" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

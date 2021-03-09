@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DseInfConsultaEspecifica.FEXNOT_INFOCONSESPECIFICADataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfConsultaEspecifica.FEXNOT_INFOCONSESPECIFICADataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfConsultaEspecifica.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFOCONSESPECIFICADataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfJustificante.FEXNOT_INFJUSTIFICANTEDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfJustificante.FEXNOT_INFJUSTIFICANTEDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfJustificante.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFJUSTIFICANTEDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfJustificante.FEXNOT_INFACUSEDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfJustificante.FEXNOT_INFACUSEDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfJustificante.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFACUSEDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfJustificante.FEXNOT_INF_ACUSEGEN_PDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfJustificante.FEXNOT_INF_ACUSEGEN_PDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfJustificante.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INF_ACUSEGEN_PDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfJustificante.FEXNOT_INF_ACUSEPAR_PDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfJustificante.FEXNOT_INF_ACUSEPAR_PDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfJustificante.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INF_ACUSEPAR_PDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_CATSALARIOMINIMODataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_CATSALARIOMINIMODataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_CATSALARIOMINIMODataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseDeclaracionIsai.FEXNOT_PARTICIPANTESDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseDeclaracionIsai.FEXNOT_PARTICIPANTESDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseDeclaracionIsai.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_PARTICIPANTESDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseDeclaracionIsai.FEXNOT_DECLARACIONDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseDeclaracionIsai.FEXNOT_DECLARACIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseDeclaracionIsai.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_DECLARACIONDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_JORNADANOTARIALDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_JORNADANOTARIALDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_JORNADANOTARIALDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DsePersonas.FEXNOT_PERSONASDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DsePersonas.FEXNOT_PERSONASDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DsePersonas.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_PERSONASDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_CATPROCEDENCIADataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_CATPROCEDENCIADataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_CATPROCEDENCIADataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_EXENCIONESDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_EXENCIONESDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_EXENCIONESDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_REDUCCIONESDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_REDUCCIONESDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_REDUCCIONESDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfNotarios.FEXNOT_INFONOTARIOSDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfNotarios.FEXNOT_INFONOTARIOSDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfNotarios.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFONOTARIOSDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfDetalleNotarios.FEXNOT_INFODETALLENOTARIOSDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfDetalleNotarios.FEXNOT_INFODETALLENOTARIOSDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfDetalleNotarios.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFODETALLENOTARIOSDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfoLineasCaptura.FEXNOT_INFOLINEASCAPTURADataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfoLineasCaptura.FEXNOT_INFOLINEASCAPTURADataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfoLineasCaptura.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFOLINEASCAPTURADataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfoDetalleLineasCaptura.FEXNOT_INFODETALLELINEASCAPTURADataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfoDetalleLineasCaptura.FEXNOT_INFODETALLELINEASCAPTURADataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfoDetalleLineasCaptura.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFODETALLELINEASCAPTURADataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfSociedadPeritos.FEXNOT_INFOSOCIEDADPERITOSDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfSociedadPeritos.FEXNOT_INFOSOCIEDADPERITOSDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfSociedadPeritos.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFOSOCIEDADPERITOSDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfValores.FEXNOT_INFOVALORESDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfValores.FEXNOT_INFOVALORESDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfValores.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFOVALORESDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfPagos.FEXNOT_INFPAGOSDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfPagos.FEXNOT_INFPAGOSDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseInfPagos.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INFPAGOSDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_CATBANCODataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_CATBANCODataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_CATBANCODataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseInfAvaluos.FEXNOT_INF_SOCPERAVALUOS_PDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseInfAvaluos.FEXNOT_INF_SOCPERAVALUOS_PDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/dseInfAvaluos.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_INF_SOCPERAVALUOS_PDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseCatalogo.FEXNOT_CATESTADDECLARACIONDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseCatalogo.FEXNOT_CATESTADDECLARACIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseCatalogo.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_CATESTADDECLARACIONDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DseDeclaracionIsai.FEXNOT_DOMICILIODataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="DseDeclaracionIsai.FEXNOT_DOMICILIODataTable" Namespace="http://schemas.datacontract.org/2004/07/SIGAPred.FuentesExternas.Isai.Services.AccesoDatos" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/DseDeclaracionIsai.xsd" name="namespace" />
+      <xs:attribute fixed="FEXNOT_DOMICILIODataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

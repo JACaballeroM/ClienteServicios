@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/DseInfoLineasCaptura.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:mstns="http://tempuri.org/DseInfoLineasCaptura.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DseInfoLineasCaptura.xsd" id="DseInfoLineasCaptura" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DseInfoLineasCaptura">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FEXNOT_INFOLINEASCAPTURA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NUMNOTARIO" type="xs:decimal" />
+              <xs:element minOccurs="0" name="NOMBRE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="APELLIDOS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="TOTAL_DECLARACIONES" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TOTAL_DECLARACIONES_MENORES" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TOTAL_DECLARACIONES_MAYORES" type="xs:decimal" />
+              <xs:element msdata:Caption="NVL(DH.TOTAL_DECLARACIONES_MENORES,0)" msprop:Generator_UserColumnName="NVL(DH_TOTAL_DECLARACIONES_MENORES,0)" msprop:Generator_ColumnVarNameInTable="_columnNVL_DH_TOTAL_DECLARACIONES_MENORES_0_" minOccurs="0" name="NVL_x0028_DH_TOTAL_DECLARACIONES_MENORES_x002C_0_x0029_" type="xs:decimal" />
+              <xs:element msdata:Caption="NVL(DA.TOTAL_DECLARACIONES_MAYORES,0)" msprop:Generator_UserColumnName="NVL(DA_TOTAL_DECLARACIONES_MAYORES,0)" msprop:Generator_ColumnVarNameInTable="_columnNVL_DA_TOTAL_DECLARACIONES_MAYORES_0_" minOccurs="0" name="NVL_x0028_DA_TOTAL_DECLARACIONES_MAYORES_x002C_0_x0029_" type="xs:decimal" />
+              <xs:element minOccurs="0" name="URLMENOR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="URLMAYOR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="URLTOTAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

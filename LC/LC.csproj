@@ -1,0 +1,560 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B35C16E6-C95D-4E0D-A931-0FE1BD8F36EB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LC</RootNamespace>
+    <AssemblyName>LC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44315</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai.disco" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\configuration.svcinfo" />
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ActualizarPagoDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.CalcularImpuestoDeclaracionIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.CalcularImpuestoDeclaracionObjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.CalcularImpuestoDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseCatalogo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseDeclaracionIsai.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfAvaluos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfConsultaEspecifica.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfDetalleNotarios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfEnviosTotales.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfJustificante.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfNotarios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfoDetalleLineasCaptura.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfoLineasCaptura.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfPagos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfSociedadPeritos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DseInfValores.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.DsePersonas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.EliminarDeclaracionObjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.EliminarParticipanteDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.EspecificarFicheroTransaccionalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.GetDatosIsrResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.InsertarParticipanteDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ModificarParticipanteDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerArticuloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerBusquedaPorExencionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerBusquedaPorReduccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerCatalogoSalarioMinimosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerCatalogosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerCatBancoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerCatEstadoDeclaracionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerCatProcedenciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesDeAvaluoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesDeAvaluoSFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorCuentaCatastralCodEstadoDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorCuentaCatastralCodEstadoDeclaracionSFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorCuentaCatastralResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorCuentaCatastralTipoJornadaNotarialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorEstadoDePagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorFechaPresentacionCodEstadoDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorFechaPresentacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorFechaPresentacionTipoJornadaNotarialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorIdDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorNombApellPaternoCodEstadoDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorNombApellPaternoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorNombApellPaternoTipoJornadaNotarialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorNumPresentacionCodEstadoDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDeclaracionesPorTipoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDomicilioParticipanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerDseDeclaracionIsaiPorIdDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerExencionesPorEjercicioAnualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerExencionesPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerExencionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfAcuseGenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfAcuseParResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfAcuseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfConsultaEspecificaByIdDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfConsultaEspecificaCuentaCatastralResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfConsultaEspecificaSujetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfConsultaEspecificaUbicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfConsultaPagosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfDetalleLineasCapturaMayorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfDetalleLineasCapturaMenorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfDetalleLineasCapturaTotalesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfEnviosTotalesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfJustificanteGenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfJustificanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfLineasCapturaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfNotariosMayor15Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfNotariosMayor180Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfNotariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfNotariosTotalesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfSociedadPeritosAvaluosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfSociedadPeritosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerInfValoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerJornadaNotarialByAnioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerLCIsaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerLCIsrResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerLineaCapturaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerParticipantesPorIdDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerParticipantesPorIdPersona_IdDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerPersonasPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerPersonasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerReduccionesPorEjercicioAnualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerReduccionesPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerReduccionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ObtenerValorCatastralResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.PagarDeclaracionObjectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.PagarDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.RechazarDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.RegistrarDeclaracion2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.RegistrarDeclaracionEnPapelComplementariaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.RegistrarDeclaracionEnPapelNormalAnticipadaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.RegistrarDeclaracionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.TestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.ValidarRespuestaOnlineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.VerificarDiaFestivoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceDeclaracionIsai\LC.ServiceDeclaracionIsai.VerificarfechavencidaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceDeclaracionIsai\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ServiceLC1\LC.ServiceLC1.solicitaLineaCapturaGenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceLC1\LC.ServiceLC1.tr_lineaCapturaGeneral.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai.wsdl" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DeclaracionIsai6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseCatalogo.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseDeclaracionIsai.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfAvaluos.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfConsultaEspecifica.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfDetalleNotarios.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfEnviosTotales.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfJustificante.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfNotarios.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfoDetalleLineasCaptura.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfoLineasCaptura.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfPagos.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfSociedadPeritos.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DseInfValores.xsd" />
+    <None Include="Connected Services\ServiceDeclaracionIsai\DsePersonas.xsd" />
+    <None Include="Connected Services\ServiceLC1\lineaCapturaGenWs_secureServer.wsdl" />
+    <Content Include="Connected Services\ServiceLC2\LC.ServiceLC2.solicitaLineaCapturaGenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceLC2\LC.ServiceLC2.tr_lineaCapturaGeneral.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceLC2\lineaCapturaGenWs_secureServer.wsdl" />
+    <None Include="Connected Services\ServiceLC\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceLC\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceLC1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceLC1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceLC1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceLC2\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceLC2\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceLC2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ServiceLC\LC.ServiceLC.tr_lineaCapturaGeneral.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceLC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ServiceToken\LC.ServiceToken.Respuesta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceToken\WS_Recibe_Avaluo.disco" />
+    <None Include="Connected Services\ServiceToken\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceToken\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceToken\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Home.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\ServiceDeclaracionIsai\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceLC1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceLC2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceLC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceToken\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceLC\lineaCapturaGenWs_secureServer.wsdl" />
+    <None Include="Connected Services\ServiceToken\WS_Recibe_Avaluo.wsdl" />
+    <None Include="Connected Services\ServiceToken\WS_Recibe_Avaluo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceToken\WS_Recibe_Avaluo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceToken\WS_Recibe_Avaluo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceDeclaracionIsai\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceLC1\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceLC2\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceLC\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceToken\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57134</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44315/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

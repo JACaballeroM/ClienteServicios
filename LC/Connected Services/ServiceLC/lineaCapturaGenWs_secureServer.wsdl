@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://10.1.78.2/fut/LineaCaptura_WS/GeneralLC/lineaCapturaGenWs_secureServer.php?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://10.1.78.2/fut/LineaCaptura_WS/GeneralLC/lineaCapturaGenWs_secureServer.php?wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://10.1.78.2/fut/LineaCaptura_WS/GeneralLC/lineaCapturaGenWs_secureServer.php?wsdl">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="tp_lineaCapturaGeneral">
+        <xsd:all>
+          <xsd:element name="usuario" type="xsd:string" />
+          <xsd:element name="password" type="xsd:string" />
+          <xsd:element name="intImpuesto" type="xsd:int" />
+          <xsd:element name="referencia" type="xsd:string" />
+          <xsd:element name="fechaLimPP" type="xsd:string" />
+          <xsd:element name="totalV" type="xsd:int" />
+          <xsd:element name="concepto" type="xsd:string" />
+          <xsd:element name="numPeriodos" type="xsd:int" />
+          <xsd:element name="usuarioGen" type="xsd:string" />
+          <xsd:element name="ip" type="xsd:string" />
+          <xsd:element name="caja" type="xsd:string" />
+          <xsd:element name="idliquidacion" type="xsd:string" />
+          <xsd:element name="idpre_liquida" type="xsd:string" />
+          <xsd:element name="fpago" type="xsd:string" />
+          <xsd:element name="lote" type="xsd:string" />
+          <xsd:element name="cuentas" type="xsd:int" />
+          <xsd:element name="arrayDatos" type="tns:arregloCamposMatriz" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="detalleCamposMatriz">
+        <xsd:all>
+          <xsd:element name="ctaoptp" type="xsd:string" />
+          <xsd:element name="ctaagua" type="xsd:string" />
+          <xsd:element name="ctapredial" type="xsd:string" />
+          <xsd:element name="ctarfc" type="xsd:string" />
+          <xsd:element name="ctaestatal" type="xsd:string" />
+          <xsd:element name="ctamercado" type="xsd:string" />
+          <xsd:element name="convenio" type="xsd:string" />
+          <xsd:element name="ctaeconum" type="xsd:string" />
+          <xsd:element name="nplaca" type="xsd:string" />
+          <xsd:element name="numcredito" type="xsd:string" />
+          <xsd:element name="numfolio" type="xsd:string" />
+          <xsd:element name="liquidacion" type="xsd:string" />
+          <xsd:element name="perini" type="xsd:int" />
+          <xsd:element name="perfin" type="xsd:int" />
+          <xsd:element name="perayo" type="xsd:int" />
+          <xsd:element name="perven" type="xsd:int" />
+          <xsd:element name="vencim" type="xsd:string" />
+          <xsd:element name="impuesto" type="xsd:string" />
+          <xsd:element name="derecho" type="xsd:string" />
+          <xsd:element name="importe1" type="xsd:string" />
+          <xsd:element name="importe2" type="xsd:string" />
+          <xsd:element name="multa" type="xsd:string" />
+          <xsd:element name="iva" type="xsd:string" />
+          <xsd:element name="cobranza" type="xsd:string" />
+          <xsd:element name="embargo" type="xsd:string" />
+          <xsd:element name="recargo1" type="xsd:string" />
+          <xsd:element name="recargo2" type="xsd:string" />
+          <xsd:element name="otros" type="xsd:string" />
+          <xsd:element name="subsidio" type="xsd:string" />
+          <xsd:element name="bonifica" type="xsd:string" />
+          <xsd:element name="total" type="xsd:string" />
+          <xsd:element name="tdecla" type="xsd:string" />
+          <xsd:element name="tsaldo" type="xsd:string" />
+          <xsd:element name="taplic" type="xsd:string" />
+          <xsd:element name="fpago" type="xsd:string" />
+          <xsd:element name="pcancl" type="xsd:string" />
+          <xsd:element name="totemp1" type="xsd:string" />
+          <xsd:element name="totemp2" type="xsd:string" />
+          <xsd:element name="actividad" type="xsd:string" />
+          <xsd:element name="nparc" type="xsd:string" />
+          <xsd:element name="hracob" type="xsd:string" />
+          <xsd:element name="fraccion" type="xsd:string" />
+          <xsd:element name="deleg" type="xsd:string" />
+          <xsd:element name="fmove" type="xsd:string" />
+          <xsd:element name="numelem" type="xsd:string" />
+          <xsd:element name="tlic" type="xsd:string" />
+          <xsd:element name="imprime" type="xsd:string" />
+          <xsd:element name="remesa" type="xsd:string" />
+          <xsd:element name="lineacap" type="xsd:string" />
+          <xsd:element name="id_pago" type="xsd:string" />
+          <xsd:element name="id_transf_elect" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="arregloCamposMatriz">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:detalleCamposMatriz[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="tr_lineaCapturaGeneral">
+        <xsd:all>
+          <xsd:element name="intImpuesto" type="xsd:int" />
+          <xsd:element name="referencia" type="xsd:string" />
+          <xsd:element name="lineaCaptura" type="xsd:string" />
+          <xsd:element name="rafagaPago" type="xsd:string" />
+          <xsd:element name="fcobro" type="xsd:date" />
+          <xsd:element name="caja" type="xsd:string" />
+          <xsd:element name="partida" type="xsd:string" />
+          <xsd:element name="dagid" type="xsd:string" />
+          <xsd:element name="error" type="xsd:int" />
+          <xsd:element name="error_descripcion" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="arreglo_tr_lineaCapturaGeneral">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:tr_lineaCapturaGeneral[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="solicitaLineaCapturaGenRequest">
+    <wsdl:part name="pregunta" type="tns:tp_lineaCapturaGeneral" />
+  </wsdl:message>
+  <wsdl:message name="solicitaLineaCapturaGenResponse">
+    <wsdl:part name="respuesta" type="tns:arreglo_tr_lineaCapturaGeneral" />
+  </wsdl:message>
+  <wsdl:portType name="ServicesPortType">
+    <wsdl:operation name="solicitaLineaCapturaGen">
+      <documentation>Serivicio Web para gener lineas de captura del impuesto 77</documentation>
+      <wsdl:input message="tns:solicitaLineaCapturaGenRequest" />
+      <wsdl:output message="tns:solicitaLineaCapturaGenResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicesBinding" type="tns:ServicesPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="solicitaLineaCapturaGen">
+      <soap:operation soapAction="rpc" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://10.1.78.2/fut/LineaCaptura_WS/GeneralLC/lineaCapturaGenWs_secureServer.php?wsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://10.1.78.2/fut/LineaCaptura_WS/GeneralLC/lineaCapturaGenWs_secureServer.php?wsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Services">
+    <wsdl:port name="ServicesPort" binding="tns:ServicesBinding">
+      <soap:address location="http://10.1.78.2/fut/LineaCaptura_WS/GeneralLC/lineaCapturaGenWs_secureServer.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

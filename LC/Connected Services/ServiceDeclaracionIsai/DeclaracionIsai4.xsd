@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://SIGAPred.FuentesExternas/Isai/Negocio/Interfaces" elementFormDefault="qualified" targetNamespace="http://SIGAPred.FuentesExternas/Isai/Negocio/Interfaces" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="EstadoPago">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoPagado" />
+      <xs:enumeration value="PendienteSISCOR" />
+      <xs:enumeration value="PagoRecibidoSISCOR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EstadoPago" nillable="true" type="tns:EstadoPago" />
+</xs:schema>

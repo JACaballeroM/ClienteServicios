@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/DseInfSociedadPeritos.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/DseInfSociedadPeritos.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DseInfSociedadPeritos.xsd" id="DseInfSociedadPeritos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DseInfSociedadPeritos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FEXNOT_INFOSOCIEDADPERITOS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="REGISTRO" type="xs:string" />
+              <xs:element minOccurs="0" name="NOMBRE" type="xs:string" />
+              <xs:element minOccurs="0" name="NUMEROAVALUOS" type="xs:decimal" />
+              <xs:element minOccurs="0" name="NUMEROCOLONIAS" type="xs:decimal" />
+              <xs:element minOccurs="0" name="VALORAVALUOS" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TOTALPROMEDIOAVALUOS" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PROMEDIOAVALUOS" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
